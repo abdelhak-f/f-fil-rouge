@@ -33,12 +33,12 @@ export default function ListingsPage() {
                 d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            <p>My Booking</p>
+            <p>Mes rendez-vous</p>
           </Link>
         </li>
         <li>
           <Link className="inline-flex gap-1 text-sm items-center text-primary font-semibold">
-            ({bookings.length}) <p>Total Booked</p>
+            ({bookings.length}) <p>Total Rendez-vous</p>
           </Link>
         </li>
       </ul>
@@ -49,11 +49,11 @@ export default function ListingsPage() {
               <table className="table-auto w-full">
                 <thead className="bg-red-500 text-white shadow-lg">
                   <tr>
-                    <th className="py-3 px-4 text-left">Vehicle Type</th>
-                    <th className="py-3 px-4 text-left">Serial Number</th>
+                    <th className="py-3 px-4 text-left">Type de Vehicle</th>
+                    <th className="py-3 px-4 text-left">numero de serie</th>
                     <th className="py-3 px-4 text-left">Description</th>
                     <th className="py-3 px-4 text-left">Garagiste</th>
-                    <th className="py-3 px-4 text-left">Date Appointment</th>
+                    <th className="py-3 px-4 text-left">Date de Rendez-vous</th>
                     <th className="py-3 px-4 w-1/12">Status</th>
                   </tr>
                 </thead>

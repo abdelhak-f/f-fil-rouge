@@ -52,7 +52,7 @@ export default function ListingsPage() {
       <ul className="mx-4 mt-4 mb-2 flex flex-row justify-around">
         <li>
           <Link className="inline-flex pr-4 gap-1 text-sm items-center text-primary font-semibold">
-            ({bookings.length})<p>Total Booked</p>
+            ({bookings.length})<p>Total Rendez-vous</p>
           </Link>
           <Link className="inline-flex pl-4 gap-1 text-sm items-center text-primary font-semibold">
             ( {userCount} )<p>Total Clients</p>
@@ -66,11 +66,11 @@ export default function ListingsPage() {
               <table className="table-auto w-full">
                 <thead className="bg-lightPrimary text-white shadow-lg">
                   <tr>
-                    <th className="py-3 px-4 text-left">Vehicle Type</th>
-                    <th className="py-3 px-4 text-left">Serial Number</th>
+                    <th className="py-3 px-4 text-left">Type de Vehicule</th>
+                    <th className="py-3 px-4 text-left">Numero de Serie</th>
                     <th className="py-3 px-4 text-left">Description</th>
                     <th className="py-3 px-4 text-left">Garagiste</th>
-                    <th className="py-3 px-4 text-left">Date appointment</th>
+                    <th className="py-3 px-4 text-left">Date de Rendez-vous</th>
                     <th className="py-3 px-4 w-1/12">Action</th>
                   </tr>
                 </thead>
@@ -101,13 +101,13 @@ export default function ListingsPage() {
                             className="hover:bg-gray-300 mr-4 px-2 font-bold rounded-lg bg-red-400 focus:outline-none"
                             onClick={() => handleReject(item._id)}
                           >
-                            Reject
+                            Rejecter
                           </button>
                           <button
                             className="hover:bg-gray-300 mr-4 px-2 font-bold rounded-lg bg-green-400 focus:outline-none"
                             onClick={() => handleAccept(item._id)}
                           >
-                            Accept
+                            Accepter
                           </button>
                         </td>
                       </tr>

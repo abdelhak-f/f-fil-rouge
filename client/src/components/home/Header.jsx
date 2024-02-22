@@ -48,7 +48,7 @@ const Header = () => {
             alt="..."
           />
           <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-            <h5 className="text-xl">First slide label</h5>
+            <h5 className="text-xl">notre atelier</h5>
             <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
